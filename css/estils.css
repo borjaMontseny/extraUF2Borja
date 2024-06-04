@@ -1,0 +1,33 @@
+a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+#ex1 img.fons {
+    width: 100%;
+    height: 10%;
+}
+
+#ex1 img.cotxe {
+    /* per colocar el cotxe necessitem posició absoluta */
+    position: absolute;
+
+    /* tamany percentual, si volem que la mida es reajusti en redimensionar la finestra */
+    width: 12%;
+
+    /* ajustar posició vertical per colocar-lo sobre l'asfalt */
+    bottom: 30%;
+    right: 0;
+    animation: marxa-cotxe 6s infinite linear;
+}
+
+@keyframes marxa-cotxe {
+    0% {
+        right: -25%;
+    }
+
+    50%,
+    100% {
+        right: 125%;
+    }
+}
