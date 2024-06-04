@@ -32,6 +32,6 @@ a {
         animation-timing-function: ease-out;
     }
     100% {
-        top: 110%;
+        top: 120%;
     }
 }
