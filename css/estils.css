@@ -13,7 +13,7 @@ a {
     position: absolute;
 
     /* tamany percentual, si volem que la mida es reajusti en redimensionar la finestra */
-    width: 12%;
+    width: 20%;
 
     /* ajustar posició horitzontal per col·locar-lo al centre */
     left: 50%;
@@ -25,7 +25,7 @@ a {
 
 @keyframes marxa-nau {
     0% {
-        top: -25%;
+        top: -55%;
     }
     50% {
         top: 50%;
