@@ -8,26 +8,30 @@ a {
     height: 10%;
 }
 
-#ex1 img.cotxe {
-    /* per colocar el cotxe necessitem posició absoluta */
+#ex1 img.nau {
+    /* per colocar la nau necessitem posició absoluta */
     position: absolute;
 
     /* tamany percentual, si volem que la mida es reajusti en redimensionar la finestra */
     width: 12%;
 
-    /* ajustar posició vertical per colocar-lo sobre l'asfalt */
-    bottom: 30%;
-    right: 0;
-    animation: marxa-cotxe 6s infinite linear;
+    /* ajustar posició horitzontal per col·locar-lo al centre */
+    left: 50%;
+    transform: translateX(-50%);
+
+    /* animació */
+    animation: marxa-nau 6s linear forwards;
 }
 
-@keyframes marxa-cotxe {
+@keyframes marxa-nau {
     0% {
-        right: -25%;
+        top: -25%;
     }
-
-    50%,
+    50% {
+        top: 50%;
+        animation-timing-function: ease-out;
+    }
     100% {
-        right: 125%;
+        top: 110%;
     }
 }
